@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%; /* -> 10px; */
+}
+
+body {
+    font-size: 1.4em; /* -> 14px; */
+    text-align: center;
+    width: 100vw;
+    min-width: 200px;
+    height: fit-content;
+    background-color: #eaf4fc;
+}
+.dis_flex{
+    display: flex;
+    padding:5px;
+}
+
+.dataArea{
+    width: 30%;
+    min-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color:#bce2e8;   
+}
+.dataArea span{    
+    width: 10rem;
+    text-align: center;
+    padding: 5px;
+}
+.inputArea{
+    width: 10rem;
+}

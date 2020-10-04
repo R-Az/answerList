@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>問題演習用ページ</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        問題の形式・数を選択して下さい。
+    </header>
+    <section>
+        <div class="dataArea">
+            <div class="dis_flex">
+                <span>問題形式</span>
+                <select id="examType" class="inputArea">
+                </select>
+            </div>
+            <div class="dis_flex">
+                <span>選択肢数</span>
+                <input type="text" id="answerNum" class="inputArea" maxlength="2">
+            </div>
+            <div class="dis_flex">
+                <span>問題数</span>
+                <input type="text" id="examNum" class="inputArea" maxlength="3">
+            </div>
+        </div>
+        <button id="generateExamArea">生成</button>
+    </section>
+    <section>
+        <button id="saveExamTop">保存</button>
+        <div>
+            <span>記録名</span>
+            <input type="text" id="recordName" maxlength="10">
+        </div>
+        <div id="examArea" class="dataArea"></div>
+        <button id="saveExamBottom">保存</button>
+    </section>
+    <script src="../js/index.js" type="module"></script>
+</body>
+
+</html>
