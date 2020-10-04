@@ -12,7 +12,6 @@ window.onload = () => {
 
 document.getElementById("generateExamArea").addEventListener("click", () => {
   const examArea = document.getElementById("examArea");
-  alert(examArea.innerHTML);
   if (examArea.innerHTML != "") {
     const deleteBool = confirm("現在のデータは削除されます。\n宜しいですか？");
     if (deleteBool) {
